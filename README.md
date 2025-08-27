@@ -32,4 +32,10 @@ This project will be carried out in different phase which will be in 3 parts:
 Milestone
 The aim is too make sure that Mbali Bakes gets the website of here dream,and be able to reach a much wider audience than her day o day clients .
 
+References
+•images I used google to get the pictures i wanted to use
+• Used Krispy Kreme as a reference of how a bakery website would look
+•Made use of w3schools to learn a few concepts to use for Html such as centering words and images .
+
+
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
