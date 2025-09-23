@@ -28,8 +28,34 @@ pre{
     text-align: left;
     margin: 0.5em;
 }
-h1{
+.Testimonials-page h1,
+.Testimonials-page h2{
     border-style: dashed;
     border-width: 2px;
+    border-color: gray;
+    border-radius: ;
+
 }
 
+.Testimonials-page h1,
+.Testimonials-page h2{
+    color: gray;
+}
+
+.Home-page {
+
+
+}
+
+
+
+.Products-page {
+
+
+
+
+}
+
+.Contact-page{
+
+}
