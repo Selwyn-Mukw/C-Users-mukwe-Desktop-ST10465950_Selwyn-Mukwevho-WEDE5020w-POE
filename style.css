@@ -59,3 +59,21 @@ pre{
 .Contact-page{
 
 }
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #d48a62;
+}
+
+a:visited{
+    color: beige;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+a:active {
+    color:blanchedalmond;
+}
