@@ -1,3 +1,12 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
 body{
     background-color: #fffaf3;
     font-family: 'Poppins' , 'Segoe UI' ,sans-serif;
@@ -8,6 +17,44 @@ body{
     padding: 0;
 
 }
+nav{
+    height: 100vh;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #a0a0a0;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding:0 10px;
+}
+a:after{
+    content: "";
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:-10px;
+    transition:0.3s;
+}
+a:hover{
+    color: #fffffff;
+}
+a:hover:after{
+    width: 100%;
+}
+
+
+
 h1,h2,h3,h4{
     color: #d48a62;
     font-family: 'Playfair Display' , serif;
@@ -60,20 +107,3 @@ pre{
 
 }
 
-a {
-    text-decoration: none;
-    cursor: pointer;
-    color: #d48a62;
-}
-
-a:visited{
-    color: beige;
-}
-
-a:hover{
-    color: aquamarine;
-}
-
-a:active {
-    color:blanchedalmond;
-}
