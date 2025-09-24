@@ -27,7 +27,7 @@ TimeLine
 This project will be carried out in different phase which will be in 3 parts:
 •	Part1: Building the foundation (27 August 2025)
 •	Part2: Designing the visuals (26 September 2025)
-•	Part3: Adding Functionality and SEO(To be discussed)
+•	Part3: Adding Functionality and SEO(19 November 2025)
 
 Milestone
 The aim is too make sure that Mbali Bakes gets the website of here dream,and be able to reach a much wider audience than her day o day clients .
@@ -36,6 +36,9 @@ References
 •images I used google to get the pictures i wanted to use
 • Used Krispy Kreme as a reference of how a bakery website would look
 •Made use of w3schools to learn a few concepts to use for Html such as centering words and images .
+
+Part 2 Of the Poe
+Making use of Css to style our websites and make them more functional 
 
 
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
