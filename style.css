@@ -351,3 +351,42 @@ body {
     background-color: #8b3c40;
     color: white;
 }
+
+/* Cart Icon Styling */
+.cart-icon-link {
+    position: fixed; 
+    top: 20px;       
+    right: 20px;      
+    z-index: 1000;   
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #8b3c40; 
+    padding: 8px 12px;
+    border: 2px solid #8b3c40;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.cart-icon-link:hover {
+    background-color: #f7f1e9; 
+}
+
+.cart-icon {
+    font-size: 1.5rem; 
+    margin-right: 5px;
+}
+
+.cart-count {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+    background-color: #8b3c40; 
+    border-radius: 50%; 
+    padding: 3px 7px;
+    min-width: 10px; 
+    text-align: center;
+    line-height: 1;
+}
