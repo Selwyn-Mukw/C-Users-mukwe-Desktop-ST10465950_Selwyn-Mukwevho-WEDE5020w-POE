@@ -95,4 +95,14 @@ pre{
 }
 
 
+/* Image hover effect */
+img {
+  transition: transform 0.3s ease; /* smooth zoom */
+  border-radius: 10px; /* optional: rounded corners */
+}
+
+img:hover {
+  transform: scale(1.1); /* enlarge 10% */
+  cursor: pointer; /* show pointer on hover */
+}
 
