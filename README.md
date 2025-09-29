@@ -33,9 +33,12 @@ Milestone
 The aim is too make sure that Mbali Bakes gets the website of here dream,and be able to reach a much wider audience than her day o day clients .
 
 References
-•images I used google to get the pictures i wanted to use
-• Used Krispy Kreme as a reference of how a bakery website would look
-•Made use of w3schools to learn a few concepts to use for Html such as centering words and images .
+• Pinterest (no date) Bakery board by reginar419. Available at: https://za.pinterest.com/reginar419/bakery/
+ (Accessed: 29 September 2025).
+• Krispy Kreme South Africa (no date) Contact. Available at: https://krispykremesa.com/contact/
+ (Accessed: 29 September 2025).
+•W3Schools (no date) HTML Tutorial. Available at: https://www.w3schools.com/html/
+ (Accessed: 29 September 2025).
 
 Part 2 Of the Poe
 Making use of Css to style our websites and make them more functional 
