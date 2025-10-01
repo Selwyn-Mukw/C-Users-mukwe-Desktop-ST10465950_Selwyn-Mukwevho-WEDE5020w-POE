@@ -57,6 +57,7 @@ implemed % for heights and width to make my elements responsive.
 Test and iterate
 •Used chrome dev tools to test my website on different device screen sizes.
 •Screenshots-
+![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/d1edf67ae409b301652081bc035412deca6b970d/Ipad%20screen.png)
 
 
 
