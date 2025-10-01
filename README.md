@@ -42,6 +42,23 @@ References
 
 Part 2 Of the Poe
 Making use of Css to style our websites and make them more functional 
+Made additional changes to my index page and restructured the whole page differently as compared to how it looks in Part 1.The reason i have changed it is because we have introduced css which gives us more options to choose from on how our lay out and styling can look
+
+Made use of css and introduced base styles such as -
+•Font Family
+•Colour Scheme
+•Margin/padding
+•Box sizing
+
+Used CSS Gridbox to display the images i have in my Products page ,It makes the page look more defined and detail creating some order on how my pictures are displayed.I used pseudo classes  to create interactive elements on my refernce page links that take you to the other page.My images are also styled that everytime you hover over them they will enlarge .
+
+implemed % for heights and width to make my elements responsive.
+
+Test and iterate
+•Used chrome dev tools to test my website on different device screen sizes.
+•Screenshots-
+
+
 
 
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
