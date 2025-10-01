@@ -63,6 +63,16 @@ Test and iterate
 ![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/6be09dda0f4338e87bf9da7a63a976e929c017df/Normal%20Laptop%20size%20screen.png)
 
 
+References used for Part 2 of my Poe
+
+WT Master Code (2022 July 9) *How to Create Responsive Website Using HTML and CSS Step by Step Complete Tutorial* [Video]. YouTube. Available at: [https://www.youtube.com/watch?v=tRSMOMSqbF8](https://www.youtube.com/watch?v=tRSMOMSqbF8) (Accessed: 23 September 2025).
+
+Silkalns, A. (2024 November 4) 18 Best Bakery Website Design Examples 2025. Colorlib. Available at: https://colorlib.com/wp/bakery-website-design/
+ (Accessed: 27 September 2025).
+ 
+Global Tech Fix (2024 June 16) How To Add Image To GitHub README | Add Screenshot In GitHub README.md File [Video]. YouTube. Available at: https://www.youtube.com/watch?v=tRSMOMSqbF8
+ (Accessed: 28 September 2025).
+
 
 
 
