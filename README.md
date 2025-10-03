@@ -62,6 +62,38 @@ Test and iterate
 ![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/5934dd5ce112e958d0a1daf346f8ba8675ce77bf/Mobile%20Phone%20view.png)
 ![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/6be09dda0f4338e87bf9da7a63a976e929c017df/Normal%20Laptop%20size%20screen.png)
 
+Changelog
+
+ 2025-10-01
+- Add screenshot images of the different screens tested for my website
+
+2025-09-29
+- Test website ability on different devices
+
+2025-09-28
+- Insert catch phrase on the index page  
+- Add emojis on the contact page  
+- Added buy buttons to products page and fixed the layout of the hero section using flexbox  
+- Added background image on testimonial and contact page  
+- Fixed product ratings and "buy now" button in products page  
+- Add enlargement style when you hover on images  
+
+2025-09-26
+- Make changes on my index page and css  
+
+2025-09-25
+- Remove unnecessary links  
+- Add comments in my css file  
+
+2025-09-24
+- Style hypertext links and create pseudo class  
+- Modify headings to ensure consistent styles  
+
+ 2025-09-23
+- Create a CSS sheet for my websites  
+- Link all my pages  
+- Add classes to each page to help with styling  
+- Change `<body>` to `<body class=>`
 
 References used for Part 2 of my Poe
 
