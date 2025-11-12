@@ -105,7 +105,7 @@ Silkalns, A. (2024 November 4) 18 Best Bakery Website Design Examples 2025. Colo
 Global Tech Fix (2024 June 16) How To Add Image To GitHub README | Add Screenshot In GitHub README.md File [Video]. YouTube. Available at: https://www.youtube.com/watch?v=tRSMOMSqbF8
  (Accessed: 28 September 2025).
 
-
-
+Part 3 of POE
+-Rectify the issue of non responsiveness on different screens, 2025/11/12
 
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
