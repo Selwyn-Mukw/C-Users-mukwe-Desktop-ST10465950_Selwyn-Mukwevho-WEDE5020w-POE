@@ -51,7 +51,7 @@ a:after{
     transition:0.3s;
 }
 a:hover{
-    color: #fffffff;
+    color: #ffffff;
 }
 a:hover:after{
     width: 100%;
@@ -85,7 +85,7 @@ pre{
     border-style: dashed;
     border-width: 2px;
     border-color: gray;
-    border-radius: ;
+    border-radius:8px;
 
 }
 
@@ -129,7 +129,7 @@ img:hover {
 
 /* Hover effect */
 .product-card:hover {
-  transform: translateY(-8px)
+  transform: translateY(-8px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
@@ -207,7 +207,7 @@ img:hover {
 .section-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color:;
+    color:d48a62;
 }
 
 .section-title .highlight {
