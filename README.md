@@ -33,12 +33,79 @@ Milestone
 The aim is too make sure that Mbali Bakes gets the website of here dream,and be able to reach a much wider audience than her day o day clients .
 
 References
-•images I used google to get the pictures i wanted to use
-• Used Krispy Kreme as a reference of how a bakery website would look
-•Made use of w3schools to learn a few concepts to use for Html such as centering words and images .
+• Pinterest (no date) Bakery board by reginar419. Available at: https://za.pinterest.com/reginar419/bakery/
+ (Accessed: 29 September 2025).
+• Krispy Kreme South Africa (no date) Contact. Available at: https://krispykremesa.com/contact/
+ (Accessed: 29 September 2025).
+•W3Schools (no date) HTML Tutorial. Available at: https://www.w3schools.com/html/
+ (Accessed: 29 September 2025).
 
 Part 2 Of the Poe
 Making use of Css to style our websites and make them more functional 
+Made additional changes to my index page and restructured the whole page differently as compared to how it looks in Part 1.The reason i have changed it is because we have introduced css which gives us more options to choose from on how our lay out and styling can look
+
+Made use of css and introduced base styles such as -
+•Font Family
+•Colour Scheme
+•Margin/padding
+•Box sizing
+
+Used CSS Gridbox to display the images i have in my Products page ,It makes the page look more defined and detail creating some order on how my pictures are displayed.I used pseudo classes  to create interactive elements on my refernce page links that take you to the other page.My images are also styled that everytime you hover over them they will enlarge .
+
+implemed % for heights and width to make my elements responsive.
+
+Test and iterate
+•Used chrome dev tools to test my website on different device screen sizes.
+•Screenshots-
+![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/d1edf67ae409b301652081bc035412deca6b970d/Ipad%20screen.png)
+![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/8bcbab5e7eb2ad653dfe91c1a6431bd98b30b893/Iphone%2014%20promax%20screen.png)
+![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/5934dd5ce112e958d0a1daf346f8ba8675ce77bf/Mobile%20Phone%20view.png)
+![image alt](https://github.com/Selwyn-Mukw/C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE/blob/6be09dda0f4338e87bf9da7a63a976e929c017df/Normal%20Laptop%20size%20screen.png)
+
+Changelog
+
+ 2025-10-01
+- Add screenshot images of the different screens tested for my website
+
+2025-09-29
+- Test website ability on different devices
+
+2025-09-28
+- Insert catch phrase on the index page  
+- Add emojis on the contact page  
+- Added buy buttons to products page and fixed the layout of the hero section using flexbox  
+- Added background image on testimonial and contact page  
+- Fixed product ratings and "buy now" button in products page  
+- Add enlargement style when you hover on images  
+
+2025-09-26
+- Make changes on my index page and css  
+
+2025-09-25
+- Remove unnecessary links  
+- Add comments in my css file  
+
+2025-09-24
+- Style hypertext links and create pseudo class  
+- Modify headings to ensure consistent styles  
+
+ 2025-09-23
+- Create a CSS sheet for my websites  
+- Link all my pages  
+- Add classes to each page to help with styling  
+- Change `<body>` to `<body class=>`
+
+References used for Part 2 of my Poe
+
+WT Master Code (2022 July 9) *How to Create Responsive Website Using HTML and CSS Step by Step Complete Tutorial* [Video]. YouTube. Available at: [https://www.youtube.com/watch?v=tRSMOMSqbF8](https://www.youtube.com/watch?v=tRSMOMSqbF8) (Accessed: 23 September 2025).
+
+Silkalns, A. (2024 November 4) 18 Best Bakery Website Design Examples 2025. Colorlib. Available at: https://colorlib.com/wp/bakery-website-design/
+ (Accessed: 27 September 2025).
+ 
+Global Tech Fix (2024 June 16) How To Add Image To GitHub README | Add Screenshot In GitHub README.md File [Video]. YouTube. Available at: https://www.youtube.com/watch?v=tRSMOMSqbF8
+ (Accessed: 28 September 2025).
+
+
 
 
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
