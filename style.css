@@ -502,3 +502,50 @@ body {
     padding: 10px;
   }
 }
+
+/* ===== Accordion Styles (fixed full content issue) ===== */
+.accordion {
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.accordion-btn {
+  width: 100%;
+  background-color: #f4c542;
+  color: #4a3b2b;
+  padding: 15px;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.accordion-btn:hover {
+  background-color: #e0b837;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease;
+  padding: 0 15px;
+  border-radius: 0 0 8px 8px;
+}
+
+/* When active, allow content to auto-size fully */
+.accordion-content.active {
+  padding: 15px;
+  max-height: 1000px; /* big enough to fit full text */
+}
+
+/* Optional: smoother list styling inside */
+.accordion-content ul {
+  margin: 10px 20px;
+  list-style-type: disc;
+}
