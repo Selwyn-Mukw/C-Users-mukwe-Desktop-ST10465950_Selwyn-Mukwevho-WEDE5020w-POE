@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mbali Bakes | Contact</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 
   <style>
     h1, h2, h4 {
@@ -20,7 +20,6 @@
 </head>
 
 <body class="Contact-page">
-
   <!-- ✅ Navigation -->
   <nav style="text-align: center; margin-top: 15px;">
     <a href="Products.html" target="_blank" title="Go to Products page">Products</a> |
@@ -36,12 +35,11 @@
   </header>
 
   <h4>
-    Should you have any questions, suggestions, compliments or comments,
-    reach out on the details below. We would love to know what our Mbali Bakes customers think.
+    Should you have any questions, suggestions, compliments, or comments, reach out on the details below. We would love to know what our Mbali Bakes customers think.
   </h4>
 
   <p style="text-align: center;">
-    <img src="_images/MbaliBakesLogo.jpg" style="width: 300px; height: 200px;">
+    <img src="_images/MbaliBakesLogo.jpg" style="width: 300px; height: 200px;" />
   </p>
 
   <!-- ✅ Contact Details -->
@@ -55,17 +53,43 @@
     <h2>📍 123 Kanana Road, Klerksdorp, South Africa</h2>
   </section>
 
+   <!-- Confirmation message -->
+    <p id="form-status"></p>
+  </section>
+
+  <!-- ✅ Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- ✅ Custom scripts -->
+  <script src="map.js"></script>
+  <script src="contact-form.js"></script>
+  
+    <!-- ✅ Contact Form -->
+  <section id="contact-form-section">
+    <h2>Send Us a Message</h2>
+    <form id="contact-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
   <!-- ✅ Map Section -->
   <section id="map-section">
     <h2>Find Us</h2>
     <div id="map"></div>
   </section>
 
-  <!-- ✅ Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-  <!-- ✅ Your custom map script -->
-  <script src="map.js"></script>
+   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="map.js"></script>
+<script src="contact-form.js"></script>
 
 </body>
 </html>

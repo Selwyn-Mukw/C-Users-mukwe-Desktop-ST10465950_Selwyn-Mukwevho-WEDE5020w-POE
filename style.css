@@ -21,13 +21,16 @@ body{
 /*styling for scroll bar*/
 }
 nav{
-    height: 100vh;
+    nav {
     width: 70vw;
     min-width: 600px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: auto;
+    margin: 20px auto;
+    height: auto; /* prevents pushing content down */
+}
+
 }
 
 /*pseudo class for link animation*/
@@ -219,13 +222,18 @@ img:hover {
 
 /* Adding background image to the contact page */
 .Contact-page {
-    background-image: url("_images/frame-food-ingredients-baking-gently-pink-pastel-background-cooking-flat-lay-with-copy-space-top-view-baking-concept-flat-lay_127032-2200.jpg");
+   .Contact-page {
+    background-image:url("_images/frame-food-ingredients-baking-gently-pink-pastel-background-cooking-flat-lay-with-copy-space-top-view-baking-concept-flat-lay_127032-2200.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 100vh;
+    /* Remove fixed height */
+    min-height: 100vh; /* only as tall as needed */
     margin: 0;
+    padding-top: 20px; /* gentle spacing at top */
+}
+
 }
 
 .content-box{
@@ -563,5 +571,89 @@ body {
     height: 300px;
     width: 95%;
   }
+}
+
+/* ===== Contact Form Styles ===== */
+#contact-form-section {
+  width: 90%;
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff8f2;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#contact-form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form label {
+  font-weight: bold;
+  color: #444;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+#contact-form button {
+  background-color: #ffb347;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  background-color: #ff9e22;
+}
+
+#form-status {
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  margin-top: 10px;
+}
+
+/* Remove extra white space on the Contact page */
+body.Contact-page {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tighten header section */
+header {
+  margin-top: 10px;       /* reduce top gap */
+  margin-bottom: 10px;    /* tighten space below */
+  padding: 0;
+}
+
+/* Reduce top/bottom spacing around headings */
+h1, h2, h4 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Optional: bring contact details closer to the header */
+#contact-details {
+  margin-top: 10px;
+  padding-top: 0;
 }
 
