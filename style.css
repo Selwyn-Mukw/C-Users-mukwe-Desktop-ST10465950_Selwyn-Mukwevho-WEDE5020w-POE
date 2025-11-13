@@ -549,3 +549,19 @@ body {
   margin: 10px 20px;
   list-style-type: disc;
 }
+#map {
+  height: 400px;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Optional: make map responsive */
+@media (max-width: 600px) {
+  #map {
+    height: 300px;
+    width: 95%;
+  }
+}
+
