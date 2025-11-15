@@ -67,3 +67,30 @@ document.addEventListener("DOMContentLoaded", function () {
     form.reset();
   });
 });
+
+// Scroll reveal for elements with .reveal
+document.addEventListener('DOMContentLoaded', () => {
+    const revealElements = document.querySelectorAll('.reveal');
+
+    // Fallback for very old browsers
+    if (!('IntersectionObserver' in window)) {
+        revealElements.forEach((el) => el.classList.add('active'));
+        return;
+    }
+
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        {
+            threshold: 0.15 // 15% visible
+        }
+    );
+
+    revealElements.forEach((el) => observer.observe(el));
+});
