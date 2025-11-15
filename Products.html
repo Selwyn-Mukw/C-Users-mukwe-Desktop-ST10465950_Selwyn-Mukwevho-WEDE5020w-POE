@@ -36,109 +36,179 @@
         <span class="cart-icon">🛒</span>
         <span class="cart-count" id="cart-item-count">0</span>
     </a>
+<!-- Product catalogue -->
+<!-- Product catalogue -->
+<section class="products-section">
 
-    <!-- Product catalogue -->
-    <section class="products-section">
-        <div class="product-grid">
-            <div class="product-card reveal">
-                <img src="_images/chocolate-cake.jpg" class="product-img" alt="Chocolate Cake">
-                <h3>Chocolate Cake</h3>
-                <p class="rating">⭐⭐⭐⭐⭐</p>
-                <span class="price">R600.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+  <!-- 🔍 Search + Sort controls -->
+  <div class="products-controls">
+    <input
+      type="text"
+      id="product-search"
+      placeholder="Search products..."
+      aria-label="Search products"
+    >
 
-            <div class="product-card reveal">
-                <img src="_images/branmuffins.jpeg" class="product-img" alt="Bran Muffins">
-                <h3>Bran Muffins</h3>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-                <span class="price">R10.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <select id="product-sort" aria-label="Sort products">
+      <option value="default">Sort by</option>
+      <option value="price-asc">Price: Low → High</option>
+      <option value="price-desc">Price: High → Low</option>
+      <option value="name-asc">Name: A → Z</option>
+      <option value="name-desc">Name: Z → A</option>
+    </select>
+  </div>
 
-            <div class="product-card reveal">
-                <img src="_images/Cinnamon-Rolls-2-500x375.jpg" class="product-img" alt="Cinnamon Rolls">
-                <h3>Cinnamon Rolls</h3>
-                <p class="rating">⭐⭐⭐⭐⭐</p>
-                <span class="price">R14.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+  <!-- ✅ ONE product-grid with ALL product cards -->
+  <div class="product-grid">
+    <div class="product-card reveal">
+      <img src="_images/chocolate-cake.jpg" class="product-img" alt="Chocolate Cake">
+      <h3>Chocolate Cake</h3>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <span class="price">R600.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Chocolate Cake"
+              data-price="600">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/Vanilla-Choc-Chip-Muffins2-1.jpg" class="product-img" alt="Vanilla Choc-Chip Muffins">
-                <h3>Vanilla Choc-Chip Muffins</h3>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-                <span class="price">R10.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/branmuffins.jpeg" class="product-img" alt="Bran Muffins">
+      <h3>Bran Muffins</h3>
+      <p class="rating">⭐⭐⭐⭐☆</p>
+      <span class="price">R10.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Bran Muffins"
+              data-price="10">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/Croissant.jpeg" class="product-img" alt="Croissants">
-                <h3>Croissants</h3>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-                <span class="price">R12.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/Cinnamon-Rolls-2-500x375.jpg" class="product-img" alt="Cinnamon Rolls">
+      <h3>Cinnamon Rolls</h3>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <span class="price">R14.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Cinnamon Rolls"
+              data-price="14">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/Chocolate-Muffins.jpg" class="product-img" alt="Chocolate Muffins">
-                <h3>Chocolate Muffins</h3>
-                <p class="rating">⭐⭐⭐⭐⭐</p>
-                <span class="price">R10.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/Vanilla-Choc-Chip-Muffins2-1.jpg" class="product-img" alt="Vanilla Choc-Chip Muffins">
+      <h3>Vanilla Choc-Chip Muffins</h3>
+      <p class="rating">⭐⭐⭐⭐☆</p>
+      <span class="price">R10.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Vanilla Choc-Chip Muffins"
+              data-price="10">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/Donuts.jpg" class="product-img" alt="Donuts">
-                <h3>Donuts</h3>
-                <p class="rating">⭐⭐⭐⭐⭐</p>
-                <span class="price">R7.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/Croissant.jpeg" class="product-img" alt="Croissants">
+      <h3>Croissants</h3>
+      <p class="rating">⭐⭐⭐⭐☆</p>
+      <span class="price">R12.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Croissants"
+              data-price="12">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/scones.jpg" class="product-img" alt="Scones">
-                <h3>Scones</h3>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-                <span class="price">R5.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/Chocolate-Muffins.jpg" class="product-img" alt="Chocolate Muffins">
+      <h3>Chocolate Muffins</h3>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <span class="price">R10.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Chocolate Muffins"
+              data-price="10">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/bluecake.jpeg" class="product-img" alt="Customised Cake">
-                <h3>Customised Cake "Special Request"</h3>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-                <span class="price">R12.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/Donuts.jpg" class="product-img" alt="Donuts">
+      <h3>Donuts</h3>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <span class="price">R7.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Donuts"
+              data-price="7">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/Christmas-Sweet-Mince-Pies.jpg" class="product-img" alt="Christmas Sweet Mince Pies">
-                <h3>Christmas Sweet Mince Pies "Special Request"</h3>
-                <p class="rating">⭐⭐⭐⭐☆</p>
-                <span class="price">R11.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/scones.jpg" class="product-img" alt="Scones">
+      <h3>Scones</h3>
+      <p class="rating">⭐⭐⭐⭐☆</p>
+      <span class="price">R5.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Scones"
+              data-price="5">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/easy-lemon-layer-cake-hero-e54adca.jpg" class="product-img" alt="Lemon cake">
-                <h3>Lemon cake</h3>
-                <p class="rating">⭐⭐⭐⭐⭐</p>
-                <span class="price">R7.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
+    <div class="product-card reveal">
+      <img src="_images/bluecake.jpeg" class="product-img" alt="Customised Cake">
+      <h3>Customised Cake &quot;Special Request&quot;</h3>
+      <p class="rating">⭐⭐⭐⭐☆</p>
+      <span class="price">R12.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Customised Cake (Special Request)"
+              data-price="12">
+        Add to Cart
+      </button>
+    </div>
 
-            <div class="product-card reveal">
-                <img src="_images/FFudgyBrownies.jpg" class="product-img" alt="Brownies">
-                <h3>Brownies</h3>
-                <p class="rating">⭐⭐⭐⭐⭐</p>
-                <span class="price">R15.00</span>
-                <button class="buy-button btn">Buy Now</button>
-            </div>
-        </div>
-    </section>
+    <div class="product-card reveal">
+      <img src="_images/Christmas-Sweet-Mince-Pies.jpg" class="product-img" alt="Christmas Sweet Mince Pies">
+      <h3>Christmas Sweet Mince Pies &quot;Special Request&quot;</h3>
+      <p class="rating">⭐⭐⭐⭐☆</p>
+      <span class="price">R11.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Christmas Sweet Mince Pies (Special Request)"
+              data-price="11">
+        Add to Cart
+      </button>
+    </div>
 
-    <!-- Your main JS file -->
+    <div class="product-card reveal">
+      <img src="_images/easy-lemon-layer-cake-hero-e54adca.jpg" class="product-img" alt="Lemon cake">
+      <h3>Lemon cake</h3>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <span class="price">R7.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Lemon Cake"
+              data-price="7">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="product-card reveal">
+      <img src="_images/FFudgyBrownies.jpg" class="product-img" alt="Brownies">
+      <h3>Brownies</h3>
+      <p class="rating">⭐⭐⭐⭐⭐</p>
+      <span class="price">R15.00</span>
+      <button class="buy-button btn add-to-cart"
+              data-name="Brownies"
+              data-price="15">
+        Add to Cart
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+    <!--  main JS file -->
     <script src="main.js" defer></script>
 </body>
 </html>

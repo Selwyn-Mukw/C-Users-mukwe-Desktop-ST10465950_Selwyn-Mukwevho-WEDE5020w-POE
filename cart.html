@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mbali Bakes | Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cart-page">
+
+  <nav class="main-nav">
+    <a href="Index.html">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="Contact.html">Contact</a>
+    <a href="Testimonials.html">Testimonials</a>
+  </nav>
+
+  <h1>Your Cart</h1>
+
+  <div id="cart-container"></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.getElementById('cart-container');
+      let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+
+      if (cart.length === 0) {
+        container.innerHTML = "<p>Your cart is empty.</p>";
+        return;
+      }
+
+      let total = 0;
+      let tableHtml = `
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price (R)</th>
+              <th>Qty</th>
+              <th>Subtotal (R)</th>
+            </tr>
+          </thead>
+          <tbody>
+      `;
+
+      cart.forEach((item, index) => {
+        const subtotal = item.price * item.quantity;
+        total += subtotal;
+        tableHtml += `
+          <tr>
+            <td>${item.name}</td>
+            <td>${item.price.toFixed(2)}</td>
+            <td>${item.quantity}</td>
+            <td>${subtotal.toFixed(2)}</td>
+          </tr>
+        `;
+      });
+
+      tableHtml += `
+          </tbody>
+        </table>
+        <div class="cart-total-line">
+          <span>Total:</span>
+          <span>R${total.toFixed(2)}</span>
+        </div>
+        <div class="cart-actions">
+          <button id="checkout-btn" class="btn">Checkout</button>
+          <button id="clear-cart-btn" class="btn">Clear Cart</button>
+        </div>
+      `;
+
+      container.innerHTML = tableHtml;
+
+      // Checkout click – fake checkout for project
+      document.getElementById('checkout-btn').addEventListener('click', () => {
+        alert("Thank you for your order! (Demo checkout)");
+        // In a real site you'd send data to a server here.
+      });
+
+      // Clear cart
+      document.getElementById('clear-cart-btn').addEventListener('click', () => {
+        localStorage.removeItem('cart');
+        localStorage.setItem('cartCount', '0');
+        location.reload();
+      });
+    });
+  </script>
+</body>
+</html>
