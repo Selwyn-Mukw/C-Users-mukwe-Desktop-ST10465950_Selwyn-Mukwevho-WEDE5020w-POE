@@ -154,6 +154,53 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 });
+document.addEventListener('DOMContentLoaded', () => {
+  const cartCountEl = document.getElementById('cart-item-count');
+  const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  // Load cart from localStorage (or empty array)
+  let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+
+  // --- helper to update count everywhere ---
+  function updateCartCount() {
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    if (cartCountEl) {
+      cartCountEl.textContent = totalItems;
+    }
+    localStorage.setItem('cartCount', totalItems.toString());
+  }
+
+  // Initialise count on page load
+  updateCartCount();
+
+  // --- add-to-cart click handler ---
+  addToCartButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const name = btn.dataset.name;
+      const price = parseFloat(btn.dataset.price || '0');
+
+      // Check if item already in cart
+      const existing = cart.find((item) => item.name === name);
+
+      if (existing) {
+        existing.quantity += 1;
+      } else {
+        cart.push({ name, price, quantity: 1 });
+      }
+
+      // Save updated cart
+      localStorage.setItem('cart', JSON.stringify(cart));
+
+      // Update count + little bump animation
+      updateCartCount();
+      if (cartCountEl) {
+        cartCountEl.classList.add('cart-bump');
+        setTimeout(() => cartCountEl.classList.remove('cart-bump'), 300);
+      }
+    });
+  });
+});
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const searchInput = document.getElementById('product-search');
