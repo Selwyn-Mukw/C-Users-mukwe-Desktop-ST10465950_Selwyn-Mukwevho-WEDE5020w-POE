@@ -2,39 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Mobile friendly -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mbali Bakes | Fresh</title>
+
+    <!-- On-page SEO: meta description -->
+    <meta name="description" content="Mbali Bakes is a home bakery offering fresh croissants, cakes, and pastries made with love. Explore our delicious baked goods.">
+
+    <!-- On-page SEO: title -->
+    <title>Mbali Bakes | Fresh Homemade Pastries & Cakes in South Africa</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="Home-page">
+<body class="home-page">
+
+    <header>
+        <!-- H1: main topic of the page -->
+        <h1 class="visually-hidden">Mbali Bakes – Fresh Homemade Pastries & Cakes</h1>
+    </header>
 
     <main class="hero-section">
-        
-        <div class="hero-left">
-            <img src="C:\Users\mukwe\OneDrive - ADvTECH Ltd\Desktop\ST10465950_Selwyn Mukwevho-WEDE5020w-POE\_images\MbaliBakesLogo.jpg" alt="Slices of artisanal bread" class="bread-image">
-            <h1 class="fresh-text"><br></h1>
-        </div>
-        
-        <div class="hero-right">
-            
+
+        <section class="hero-left" aria-label="Mbali Bakes logo">
+            <img src="_images/MbaliBakesLogo.jpg"
+                 alt="Mbali Bakes home bakery logo"
+                 loading="lazy"
+                 class="bread-image">
+        </section>
+
+        <section class="hero-right" aria-label="Featured bakery product">
+
             <div class="product-info">
-                <p class="healthy-label"> A Delicious Affair to Remember</p>
-                <img src="C:\Users\mukwe\OneDrive - ADvTECH Ltd\Desktop\ST10465950_Selwyn Mukwevho-WEDE5020w-POE\_images\Croissant.jpeg" alt="Healthy seeded bread loaf" class="product-image">
-                
-                <a href="Products.html" class="view-products-btn">
-                    VIEW PRODUCTS
+                <h2 class="healthy-label">A Delicious Affair to Remember</h2>
+
+                <img src="_images/Croissant.jpeg"
+                     alt="Fresh buttery croissants on a baking tray"
+                     loading="lazy"
+                     class="product-image">
+
+                <!-- Internal link to products page -->
+                <a href="products.html" class="view-products-btn">
+                    View Products
                 </a>
 
-                <div class="slider-nav">
-                    <button class="nav-arrow left-arrow">&#8249;</button>
-                    <button class="nav-arrow right-arrow">&#8250;</button>
+                <div class="slider-nav" aria-label="Product image slider controls">
+                    <button class="nav-arrow left-arrow" aria-label="Previous product">&#8249;</button>
+                    <button class="nav-arrow right-arrow" aria-label="Next product">&#8250;</button>
                 </div>
             </div>
 
-        </div>
+        </section>
 
     </main>
-    
-    </body>
+
+</body>
 </html>
