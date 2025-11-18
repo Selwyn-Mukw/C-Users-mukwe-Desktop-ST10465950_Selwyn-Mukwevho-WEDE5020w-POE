@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .bindPopup("<b>Mbali Bakes</b><br>123 Kanana Road, Klerksdorp")
       .openPopup();
   } else {
-    // console.log("Map not initialised on this page (no #map or no Leaflet).");
+    
   }
 
   // contact-form.js
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       },
       {
-        threshold: 0.15, // 15% visible
+        threshold: 0.15,
       }
     );
 
@@ -145,14 +145,12 @@ document.addEventListener("DOMContentLoaded", function () {
     revealElements.forEach((el) => el.classList.add("active"));
   }
 
-  /* =========================
-     5. Cart / Add-to-cart logic
-     ========================= */
+  /* 5. Cart / Add-to-cart logic */
  document.addEventListener('DOMContentLoaded', () => {
   const cartCountEl = document.getElementById('cart-item-count');
   const buttons = document.querySelectorAll('.buy-button[data-name], .add-to-cart[data-name]');
 
-  // Load cart from localStorage (or empty array)
+  // Load cart from localStorage
   let cart = JSON.parse(localStorage.getItem('cart') || '[]');
 
   function updateCartCount() {
@@ -198,10 +196,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const cartCountEl = document.getElementById('cart-item-count');
   const addToCartButtons = document.querySelectorAll('.add-to-cart');
 
-  // Load cart from localStorage (or empty array)
+  // Load cart from localStorage
   let cart = JSON.parse(localStorage.getItem('cart') || '[]');
 
-  // --- helper to update count everywhere ---
+  //helper to update count everywhere
   function updateCartCount() {
     const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
     if (cartCountEl) {
@@ -210,10 +208,10 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.setItem('cartCount', totalItems.toString());
   }
 
-  // Initialise count on page load
+  //Initialise count on page load
   updateCartCount();
 
-  // --- add-to-cart click handler ---
+  //add-to-cart click handler
   addToCartButtons.forEach((btn) => {
     btn.addEventListener('click', () => {
       const name = btn.dataset.name;
@@ -256,7 +254,6 @@ document.addEventListener('DOMContentLoaded', () => {
   function getCardData(card) {
     const name = (card.querySelector('h3')?.textContent || '').toLowerCase();
 
-    // Prefer data-price; fallback to text in .price
     const btn = card.querySelector('.buy-button, .add-to-cart');
     let price = NaN;
     if (btn && btn.dataset.price) {
@@ -275,13 +272,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const query = searchInput.value.trim().toLowerCase();
     const sortValue = sortSelect.value;
 
-    // 1️⃣ Filter
+    // Filter
     let filtered = allCards.filter((card) => {
       const { name } = getCardData(card);
       return name.includes(query);
     });
 
-    // 2️⃣ Sort
+    // 2️Sort
     if (sortValue !== 'default') {
       filtered.sort((a, b) => {
         const dataA = getCardData(a);
@@ -302,7 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // 3️⃣ Re-render grid
+    // 3️Re-render grid
     grid.innerHTML = '';
     filtered.forEach((card) => grid.appendChild(card));
   }
@@ -312,3 +309,120 @@ document.addEventListener('DOMContentLoaded', () => {
   sortSelect.addEventListener('change', applyFiltersAndSort);
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  if (!form || !status) return;
+
+  form.addEventListener("submit", function (event) {
+    if (!form.checkValidity()) {
+      event.preventDefault(); // stop submission if HTML5 validation fails
+      status.textContent = "Please fix the highlighted fields before sending your message.";
+      status.style.color = "red";
+    } else {
+      status.textContent = "Opening your email app so you can send the message...";
+      status.style.color = "green";
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("contact-form");
+  const status = document.getElementById("form-status");
+
+  function showError(id, message) {
+    document.getElementById(id).textContent = message;
+  }
+
+  function clearErrors() {
+    document.querySelectorAll(".error-message").forEach(el => el.textContent = "");
+    status.textContent = "";
+  }
+
+  function validateForm() {
+    clearErrors();
+    let valid = true;
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const type = document.getElementById("message-type").value.trim();
+    const date = document.getElementById("preferred-date").value;
+    const message = document.getElementById("message").value.trim();
+
+    if (name.length < 2) {
+      showError("name-error", "Name must be at least 2 characters.");
+      valid = false;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      showError("email-error", "Please enter a valid email address.");
+      valid = false;
+    }
+
+    const phonePattern = /^0[0-9]{9}$/;
+    if (!phonePattern.test(phone)) {
+      showError("phone-error", "Enter a valid 10-digit SA phone number.");
+      valid = false;
+    }
+
+    if (!type) {
+      showError("type-error", "Please select a message type.");
+      valid = false;
+    }
+
+    if (date) {
+      const today = new Date();
+      const selected = new Date(date);
+      today.setHours(0, 0, 0, 0);
+      if (selected < today) {
+        showError("date-error", "Date cannot be in the past.");
+        valid = false;
+      }
+    }
+
+    if (message.length < 10) {
+      showError("message-error", "Message must be at least 10 characters.");
+      valid = false;
+    }
+
+    return valid;
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    if (!validateForm()) {
+      status.textContent = "Please fix errors before submitting.";
+      status.style.color = "red";
+      return;
+    }
+
+    status.textContent = "Sending message...";
+    status.style.color = "black";
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch(form.action, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data)
+    })
+      .then(response => {
+        if (response.ok) {
+          status.textContent = "Message sent successfully!";
+          status.style.color = "green";
+          form.reset();
+        } else {
+          throw new Error();
+        }
+      })
+      .catch(() => {
+        status.textContent = "Error sending message. Try again later.";
+        status.style.color = "red";
+      });
+  });
+});

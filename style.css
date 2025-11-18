@@ -838,3 +838,16 @@ h1, h2, h4 {
 #contact-details p {
     margin: 8px 0;
 }
+
+.error-message {
+  color: red;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+#form-status {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}

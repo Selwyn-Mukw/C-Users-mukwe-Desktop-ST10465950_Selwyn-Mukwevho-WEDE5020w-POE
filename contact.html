@@ -70,59 +70,49 @@
     <p id="form-status"></p>
   </section>
 
-    <!-- Contact Form -->
+  <!-- Contact Form -->
   <section id="contact-form-section" aria-label="Send Mbali Bakes a message">
-    <h2>Send Us a Message</h2>
-    <form id="contact-form">
-      <label for="name">Full Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Your Name"
-        required
-      />
+  <h2>Send Us a Message</h2>
 
-      <label for="email">Email Address</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="you@example.com"
-        required
-      />
+  <form id="contact-form" action="submit_form.php" method="post" novalidate>
 
-      <label for="phone">Phone / WhatsApp Number</label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        placeholder="072 123 4567"
-      />
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required minlength="2" maxlength="50">
+    <small id="name-error" class="error-message"></small>
 
-      <label for="message-type">Type of Message</label>
-      <select id="message-type" name="message-type" required>
-        <option value="">-- Please select --</option>
-        <option value="General Enquiry">General Enquiry</option>
-        <option value="Order Request">Order Request</option>
-        <option value="Complaint">Complaint</option>
-        <option value="Compliment">Compliment</option>
-        <option value="Suggestion">Suggestion</option>
-      </select>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <small id="email-error" class="error-message"></small>
 
-      <label for="message">Your Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        placeholder="Type your message here..."
-        required
-      ></textarea>
+    <label for="phone">Phone / WhatsApp Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="0721234567"
+           pattern="^0[0-9]{9}$" title="Enter a 10-digit South African number (0721234567)" required>
+    <small id="phone-error" class="error-message"></small>
 
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <label for="message-type">Type of Message</label>
+    <select id="message-type" name="message-type" required>
+      <option value="">-- Please select --</option>
+      <option value="General Enquiry">General Enquiry</option>
+      <option value="Order Request">Order Request</option>
+      <option value="Complaint">Complaint</option>
+      <option value="Compliment">Compliment</option>
+      <option value="Suggestion">Suggestion</option>
+    </select>
+    <small id="type-error" class="error-message"></small>
 
+    <label for="preferred-date">Preferred Date (Optional)</label>
+    <input type="date" id="preferred-date" name="preferred-date">
+    <small id="date-error" class="error-message"></small>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" rows="5" required minlength="10" maxlength="500"></textarea>
+    <small id="message-error" class="error-message"></small>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+  <p id="form-status"></p>
+</section>
 
   <!-- Map Section -->
   <section id="map-section" aria-label="Map to Mbali Bakes">
