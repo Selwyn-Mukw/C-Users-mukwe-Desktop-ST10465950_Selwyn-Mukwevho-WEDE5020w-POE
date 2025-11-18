@@ -2,70 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- Mobile-friendly -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- On-page SEO description -->
+  <meta name="description"
+        content="Learn the story behind Mbali Bakes – a South African home bakery born during the pandemic. Discover our mission, vision, and commitment to the Kanana community.">
+
+  <!-- SEO title -->
+  <title>Mbali Bakes | About Our Home Bakery</title>
+
   <link rel="stylesheet" href="style.css">
-  <title>Mbali bakes | About</title>
 </head>
 
-<body class="About-page">
+<body class="about-page">
+
   <!-- Navigation -->
-  <nav>
-    <a href="Products.html" target="_blank" title="Goes to Products page">Products</a>
-    <a href="Testimonials.html" target="_blank" title="Goes to Testimonials page">Testimonials</a>
-    <a href="Contact.html" target="_blank" title="Goes to Contact page">Contact</a>
-    <a href="Index.html" target="_blank" title="Goes to Index Page">Index</a>
+  <nav class="main-nav">
+    <a href="Index.html"        title="Go to Home page">Home</a>
+    <a href="Products.html"     title="Go to Products page">Products</a>
+    <a href="Testimonials.html" title="Go to Testimonials page">Testimonials</a>
+    <a href="Contact.html"      title="Go to Contact page">Contact</a>
   </nav>
 
-  <div class="content-box">
-    <h1>Who is Mbali Bakes?</h1>
+  <main class="content-box">
+
+    <!-- H1: main topic of the page -->
+    <h1>About Mbali Bakes</h1>
     <hr>
 
     <!-- Accordion Section -->
-    <div class="accordion">
+    <section class="accordion" aria-label="About Mbali Bakes Information">
+
+      <!-- Our Story -->
       <button class="accordion-btn">Our Story</button>
       <div class="accordion-content">
         <p>
-          Mbali Bakes is a homegrown bakery business founded in 2020 during the COVID-19 pandemic. After losing her job,
-          Mbali returned to her hometown of Klerksdorp, where she rediscovered her passion for baking. She began selling
-          freshly baked scones and muffins each morning on the streets of Kanana. Her baked goods quickly gained popularity
-          in the community, often selling out within hours. Recognizing the strong demand and support from locals,
-          Mbali saw an opportunity to turn her passion into a sustainable business — and thus, Mbali Bakes was born.
+          Mbali Bakes is a homegrown bakery founded in 2020 during the COVID-19 pandemic. After losing her job,
+          Mbali returned to her hometown of Klerksdorp, where she rediscovered her passion for baking.
+          She began selling freshly baked scones and muffins in the streets of Kanana, and her goods quickly became
+          community favourites — often selling out within hours. With strong local support and growing demand,
+          Mbali turned her passion into a sustainable business, creating Mbali Bakes.
         </p>
       </div>
 
+      <!-- Vision -->
       <button class="accordion-btn">Our Vision</button>
       <div class="accordion-content">
         <p>
-          Our vision is to become a beloved household name in South Africa’s baking industry starting from the heart
-          of Kanana and expanding into wider markets — while inspiring others to turn passion into purpose and business.
+          Our vision is to become a beloved household name in South Africa’s baking industry — starting from Kanana and
+          expanding into wider markets — while inspiring others to turn passion into purpose.
         </p>
       </div>
 
+      <!-- Mission -->
       <button class="accordion-btn">Our Mission</button>
       <div class="accordion-content">
         <p>
-          At Mbali Bakes, our mission is to bring warmth, comfort, and joy to our community through freshly baked,
-          homemade goods made with love, passion, and care. We aim to empower local entrepreneurship while delivering
-          quality and consistency with every bite.
+          Our mission is to bring warmth, comfort, and joy to the community through freshly baked, homemade goods crafted
+          with love and care. We aim to empower local entrepreneurship while delivering consistent quality with every bite.
         </p>
       </div>
 
+      <!-- Target Audience -->
       <button class="accordion-btn">Target Audience</button>
       <div class="accordion-content">
-        <p>
-          Mbali Bakes caters to:
-          <ul>
-            <li>Local community members: Individuals and families in Kanana</li>
-            <li>Commuters and workers: Early morning customers looking for a quick treat</li>
-            <li>Event planners and caterers: Parties, meetings, churches, and local functions</li>
-          </ul>
-        </p>
+        <p>Mbali Bakes serves:</p>
+        <ul>
+          <li>Local families and individuals in Kanana</li>
+          <li>Early-morning commuters and workers</li>
+          <li>Event planners and caterers for parties, meetings, churches, and functions</li>
+        </ul>
       </div>
-    </div>
-  </div>
+
+    </section>
+
+  </main>
 
   <!-- Link JS at bottom -->
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 
 </body>
 </html>
