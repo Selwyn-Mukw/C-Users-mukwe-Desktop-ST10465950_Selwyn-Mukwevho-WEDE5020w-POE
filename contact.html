@@ -3,7 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mbali Bakes | Contact</title>
+
+  <!-- On-page SEO: title + description -->
+  <title>Mbali Bakes | Contact & Order Enquiries</title>
+  <meta name="description"
+        content="Contact Mbali Bakes for orders, questions, and special requests. Find our phone number, WhatsApp, email, address in Kanana, Klerksdorp, and send us a message online.">
+
   <link rel="stylesheet" href="style.css" />
 
   <style>
@@ -12,85 +17,105 @@
     }
   </style>
 
-  <!-- ✅ Leaflet CSS -->
+  <!-- Leaflet CSS for the map -->
   <link
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
   />
 </head>
 
-<body class="Contact-page">
-  <!-- ✅ Navigation -->
-  <nav style="text-align: center; margin-top: 15px;">
-    <a href="Products.html" target="_blank" title="Go to Products page">Products</a> |
-    <a href="About.html" target="_blank" title="Go to About page">About</a> |
-    <a href="Testimonials.html" target="_blank" title="Go to Testimonials page">Testimonials</a> |
-    <a href="Index.html" target="_blank" title="Go to Index Page">Home</a>
+<body class="contact-page">
+
+  <!-- Navigation -->
+  <nav class="main-nav" style="text-align: center; margin-top: 15px;">
+    <a href="Index.html"        title="Go to Home page">Home</a> |
+    <a href="Products.html"     title="Go to Products page">Products</a> |
+    <a href="About.html"        title="Go to About page">About</a> |
+    <a href="Testimonials.html" title="Go to Testimonials page">Testimonials</a> |
+    <a href="Contact.html"      title="You are on the Contact page">Contact</a>
   </nav>
 
-  <!-- ✅ Header -->
+  <!-- Header -->
   <header>
     <h1>Get in Touch with Us</h1>
     <h2>We would love to hear from you</h2>
   </header>
 
   <h4>
-    Should you have any questions, suggestions, compliments, or comments, reach out on the details below. We would love to know what our Mbali Bakes customers think.
+    Should you have any questions, suggestions, compliments, or comments, reach out on the details below.
+    We would love to know what our Mbali Bakes customers think.
   </h4>
 
   <p style="text-align: center;">
-    <img src="_images/MbaliBakesLogo.jpg" style="width: 300px; height: 200px;" />
+    <img
+      src="_images/MbaliBakesLogo.jpg"
+      style="width: 300px; height: 200px;"
+      alt="Mbali Bakes home bakery logo"
+      loading="lazy"
+    />
   </p>
 
-  <!-- ✅ Contact Details -->
-  <section id="contact-details">
-    <h2>Contact Us</h2>
-    <h2>📱 Telephone: 011 958 1214</h2>
-    <h2>💬 WhatsApp: 072 745 6759</h2>
-    <h2>📧 Email: mbali@mbakes.co.za</h2>
-    <h2>📸👍 Instagram / Facebook: Coming Soon!</h2>
-    <h2>🕒 Trading Hours: 6am–6pm (Mon–Sun). Public Holidays: 7am–4pm</h2>
-    <h2>📍 123 Kanana Road, Klerksdorp, South Africa</h2>
-  </section>
+  <!-- Contact Details -->
+  <section id="contact-details" aria-label="Mbali Bakes contact details">
+    <h2>Contact Details</h2>
 
-   <!-- Confirmation message -->
+    <p>📱 <strong>Telephone:</strong> 011 958 1214</p>
+    <p>💬 <strong>WhatsApp:</strong> 072 745 6759</p>
+    <p>📧 <strong>Email:</strong> <a href="mailto:mbali@mbakes.co.za">mbali@mbakes.co.za</a></p>
+    <p>📸👍 <strong>Instagram / Facebook:</strong> Coming Soon!</p>
+    <p>🕒 <strong>Trading Hours:</strong> 6am–6pm (Mon–Sun). Public Holidays: 7am–4pm</p>
+    <p>📍 <strong>Address:</strong> 123 Kanana Road, Klerksdorp, South Africa</p>
+
+    <!-- Confirmation message from contact form JS -->
     <p id="form-status"></p>
   </section>
 
-  <!-- ✅ Leaflet JS -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
-  <!-- ✅ Custom scripts -->
-  <script src="map.js"></script>
-  <script src="contact-form.js"></script>
-  
-    <!-- ✅ Contact Form -->
-  <section id="contact-form-section">
+  <!-- Contact Form -->
+  <section id="contact-form-section" aria-label="Send Mbali Bakes a message">
     <h2>Send Us a Message</h2>
     <form id="contact-form">
       <label for="name">Full Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
 
       <label for="email">Email Address</label>
-      <input type="email" id="email" name="email" placeholder="you@example.com" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        required
+      />
 
       <label for="message">Your Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        placeholder="Type your message here..."
+        required
+      ></textarea>
 
       <button type="submit">Send Message</button>
     </form>
   </section>
 
-  <!-- ✅ Map Section -->
-  <section id="map-section">
+  <!-- Map Section -->
+  <section id="map-section" aria-label="Map to Mbali Bakes">
     <h2>Find Us</h2>
     <div id="map"></div>
   </section>
 
-   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="map.js"></script>
-<script src="main.js"></script>
-
+  <!-- Scripts (loaded once, at the bottom) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="map.js"></script>
+  <script src="contact-form.js"></script>
+  <script src="main.js"></script>
 
 </body>
 </html>

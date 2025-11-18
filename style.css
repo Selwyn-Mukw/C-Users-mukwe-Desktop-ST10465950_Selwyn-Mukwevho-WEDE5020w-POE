@@ -823,3 +823,18 @@ h1, h2, h4 {
 #product-sort {
   min-width: 160px;
 }
+/* Align the product details */
+#contact-details {
+    text-align: center;
+    max-width: 700px;      
+    margin: 0 auto;        
+    line-height: 1.8;
+}
+
+#contact-details p strong {
+    font-weight: 600;
+}
+
+#contact-details p {
+    margin: 8px 0;
+}
