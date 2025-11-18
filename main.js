@@ -48,40 +48,80 @@ document.addEventListener("DOMContentLoaded", () => {
     // console.log("Map not initialised on this page (no #map or no Leaflet).");
   }
 
-  /* =========================
-     3. Contact form features
-     Only run if contact-form exists
-     ========================= */
+  // contact-form.js
+
+document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contact-form");
   const status = document.getElementById("form-status");
 
-  if (form && status) {
-    form.addEventListener("submit", function (event) {
-      event.preventDefault(); // prevent page reload
+  if (!form) return; // safety check
 
-      // Basic form validation
-      const name = form.name.value.trim();
-      const email = form.email.value.trim();
-      const message = form.message.value.trim();
+  form.addEventListener("submit", function (event) {
+    event.preventDefault(); // stop normal form submit
 
-      if (!name || !email || !message) {
-        status.textContent = "⚠️ Please fill out all fields.";
-        status.style.color = "red";
-        return;
-      }
+    // Get values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const messageType = document.getElementById("message-type").value;
+    const messageText = document.getElementById("message").value.trim();
 
-      // Simulate successful submission
-      status.textContent = "✅ Thank you, " + name + "! Your message has been sent.";
-      status.style.color = "green";
+    // Simple validation
+    if (!name || !email || !messageType || !messageText) {
+      status.textContent = "Please fill in all required fields.";
+      status.style.color = "red";
+      return;
+    }
 
-      // Reset form
-      form.reset();
-    });
-  }
+    // Very basic email check (good enough for front-end validation)
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      status.textContent = "Please enter a valid email address.";
+      status.style.color = "red";
+      return;
+    }
 
-  /* =========================
-     4. Scroll reveal
-     ========================= */
+    // Recipient (change this if you want a different address)
+    const recipient = "mbali@mbakes.co.za";
+
+    // Subject and body for the email
+    const subject = `Website Contact Form - ${messageType}`;
+
+    const bodyLines = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      phone ? `Phone/WhatsApp: ${phone}` : "",
+      `Type of Message: ${messageType}`,
+      "",
+      "Message:",
+      messageText
+    ].filter(Boolean); // remove empty lines
+
+    const body = bodyLines.join("\n");
+
+    // Build mailto URL
+    const mailtoLink =
+      "mailto:" +
+      encodeURIComponent(recipient) +
+      "?subject=" +
+      encodeURIComponent(subject) +
+      "&body=" +
+      encodeURIComponent(body);
+
+    // Show a friendly status message
+    status.textContent = "Opening your email app so you can send the message...";
+    status.style.color = "green";
+
+    // Open the user's email client with pre-filled email
+    window.location.href = mailtoLink;
+
+    // Optionally clear the form
+    form.reset();
+  });
+});
+
+
+  /*  4. Scroll reveal */
   const revealElements = document.querySelectorAll(".reveal");
 
   if ("IntersectionObserver" in window) {

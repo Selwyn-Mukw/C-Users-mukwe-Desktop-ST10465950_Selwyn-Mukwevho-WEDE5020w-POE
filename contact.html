@@ -70,7 +70,7 @@
     <p id="form-status"></p>
   </section>
 
-  <!-- Contact Form -->
+    <!-- Contact Form -->
   <section id="contact-form-section" aria-label="Send Mbali Bakes a message">
     <h2>Send Us a Message</h2>
     <form id="contact-form">
@@ -92,6 +92,24 @@
         required
       />
 
+      <label for="phone">Phone / WhatsApp Number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="072 123 4567"
+      />
+
+      <label for="message-type">Type of Message</label>
+      <select id="message-type" name="message-type" required>
+        <option value="">-- Please select --</option>
+        <option value="General Enquiry">General Enquiry</option>
+        <option value="Order Request">Order Request</option>
+        <option value="Complaint">Complaint</option>
+        <option value="Compliment">Compliment</option>
+        <option value="Suggestion">Suggestion</option>
+      </select>
+
       <label for="message">Your Message</label>
       <textarea
         id="message"
@@ -104,6 +122,7 @@
       <button type="submit">Send Message</button>
     </form>
   </section>
+
 
   <!-- Map Section -->
   <section id="map-section" aria-label="Map to Mbali Bakes">
