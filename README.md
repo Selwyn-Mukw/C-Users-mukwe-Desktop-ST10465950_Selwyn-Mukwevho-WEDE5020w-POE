@@ -106,6 +106,8 @@ Global Tech Fix (2024 June 16) How To Add Image To GitHub README | Add Screensho
  (Accessed: 28 September 2025).
 
 Part 3 of POE
--Rectify the issue of non responsiveness on different screens, 2025/11/12
+
+-Create main js page that will car r y all the JS code .
+-Rectify the issue of non responsiveness on different screens 2025/11/12
 
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
