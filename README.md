@@ -106,8 +106,54 @@ Global Tech Fix (2024 June 16) How To Add Image To GitHub README | Add Screensho
  (Accessed: 28 September 2025).
 
 Part 3 of POE
+Implement JavaScript (programming) to add additional functionality and interaction to a website.
+Apply SEO best practices to a website.
+Create forms with HTML code.
+Build JavaScript validation into forms.
 
--Create main js page that will car r y all the JS code .
--Rectify the issue of non responsiveness on different screens 2025/11/12
+Changelog
+14/10/2025
+-Create Java script file for my website
+
+12/11/2025
+-fix css styles as some lines were
+ missing color codes or entered empty values
+-add responsiveness for all the different mobiles
+
+13/11/2025
+-add aacordion functions
+-create interactive maps using leaflet
+create a form in my contact page and align it accordingly
+
+15/11/2025
+-add counting feature to js
+-add search function in the products page where you can sort and search sold products
+-fix product alignment
+
+18/11/2025
+-add js form validations
+-Modify my contact page the form should request inputs
+-modify all the pages to have SEO
+
+19/11/2025
+-update references
+-make sure corrections are done from feedback from part 3
+-create changelog
+
+references for part 3
+GreatStack, 2021. How To Make An Accordion Using HTML And CSS | Collapsible Content On Website [video]. YouTube. Available at: https://www.youtube.com/watch?v=WMqB8sVOCtk
+ [Accessed 13 November 2025].
+
+ Bro Code, 2021. Learn HTML forms in 8 minutes [video]. YouTube. Available at: https://www.youtube.com/watch?v=20BpkybH6po
+ [Accessed 13 November 2025].
+
+Ahrefs, 2025. SEO in 2025: How I'd Learn it if I Were Starting Over [video]. YouTube. Available at: https://www.youtube.com/watch?v=s2h7X-c2jE
+ [Accessed 18 November 2025].
+
+ Web Dev Simplified, 2019. JavaScript Form Validation [video]. YouTube. Available at: https://www.youtube.com/watch?v=In0nB0ABaUk
+ [Accessed 18 November 2025].
+
+ Stacey, N., 2021, Clickable Interactive Map Tutorial – Building & Designing for … [video], YouTube, https://www.youtube.com/watch?v=WMqB8sVOCtk
+ [accessed 19 November 2025].
 
 "# C-Users-mukwe-Desktop-ST10465950_Selwyn-Mukwevho-WEDE5020w-POE" 
